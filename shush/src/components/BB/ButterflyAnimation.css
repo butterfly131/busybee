@@ -1,0 +1,55 @@
+.bfly-container {
+    width: 150px;
+    padding: 20px 10px;
+    margin: 30px 20px;
+    background-color: transparent;
+}
+
+.butterfli {
+    width: 65px;
+    height: auto;
+}
+
+@keyframes move {
+  0%
+   {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateX(5vh);
+  }
+  18% {
+    transform: translateY(5vh);
+  }
+  
+  25% {
+    transform: translateX(-7vh);
+  }
+  29% {
+    transform: translateY(7vh);
+  }
+
+  35% {
+    transform: translateX(-7vh);
+  }
+  45% {
+    transform: translateY(7vh);
+  }
+  53% {
+    transform: translateX(4vh);
+  }
+  
+  65% {
+    transform: translateY(4vh);
+  }
+  75% {
+    transform: translateX(8vh);
+  }
+  100% {
+    transform: translateY(10vh);
+  }
+}
+
+.butterfli {
+    animation: move 15s infinite;
+}

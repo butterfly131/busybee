@@ -1,0 +1,105 @@
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: theme.spacing(4),
+    background: "#fffff0",
+  },
+  title: {
+    fontSize: "3rem",
+    marginBottom: theme.spacing(7),
+    marginTop: theme.spacing(1),
+    textAlign: "center",
+    fontFamily: "Aref Ruqaa Ink",
+    color: "#870000",
+    
+  },
+  intro: {
+    fontSize: "1.5rem",
+    maxWidth: "700px",
+    margin: "0 auto",
+    textAlign: "justify",
+    fontFamily: "Exo",
+    transition: "transform 0.5s ease",
+    transformOrigin: "top",
+    marginBottom: "70px",
+    color: "#a1045a",
+  },
+  cardContainer: {
+    marginTop: theme.spacing(3),
+  },
+  polaroid: {
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2)",
+    background: "#fcfcfc",
+    padding: theme.spacing(2),
+    // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    borderRadius: "4px",
+    textAlign: "center",
+    position: "relative",
+    maxHeight: "680px",
+    marginBottom: "40px",
+    paddingBottom: "40px",
+  },
+  imageContainer:{
+    maxHeight: "500px",
+    overflow: "hidden",
+    marginBottom: "40px",
+  },
+  image: {
+    maxWidth: "100%",
+    height: "auto",
+    display: "block",
+    borderRadius: "4px",
+    margin: "0 auto",    
+    transform: "translate(0, -5%)",
+    transition: "opacity 0.5s ease",
+  },
+  caption: {
+    marginTop: theme.spacing(1),
+    fontSize: "1.1rem",
+    fontFamily: "Exo",
+    // padding: "40px",
+  },
+  cont1: {
+    fontFamily: "Grenze Gotisch",
+    fontSize: "1.7rem",
+    maxWidth: "560px",
+    margin: "20px auto",
+    textAlign: "justify",
+    // color: "#d04f2c",
+    color: "#9b2e41",
+  },
+  cont2: {
+    fontFamily: "Grenze Gotisch",
+    fontSize: "1.7rem",
+    maxWidth: "560px",
+    margin: "120px auto",
+    textAlign: "justify",
+    // color: "#431e15",
+    color: "#9b2e41",
+  },
+  description: {
+    fontSize: "1rem",
+    maxWidth: "700px",
+    margin: "20px auto",
+  },
+  button: {
+    margin: "20px auto",
+    display: "block",
+    fontSize: "1.2rem",
+    background: "#9b2e41",
+    color: "#fff",
+    padding: "10px 20px",
+    borderRadius: "4px",
+    border: "none",
+    cursor: "pointer",
+    fontFamily: "Exo",
+    letterSpacing: "1.5px",
+    transition: "background 0.3s ease",
+    "&:hover": {
+      background: "#870000",
+    },
+  },
+}));
+
+export default useStyles;

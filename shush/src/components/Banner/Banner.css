@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&v1");
+@import url('https://fonts.cdnfonts.com/css/roomline');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3f51b5;
+  opacity: 0.9;
+  color: #ffffff;
+  /* background-image: url(https://i.pinimg.com/236x/02/d5/f0/02d5f0314db3e0bff1a648481916517c.jpg); */
+  /* background-image: url(https://i.pinimg.com/564x/d9/02/67/d90267da8774561219db2083f9531138.jpg); */
+  /* background-image: url(https://i.pinimg.com/564x/fe/fc/57/fefc57940b14f9f3d0f9eee41860dabb.jpg); */
+  /* background-image: url(https://i.pinimg.com/564x/ea/d8/47/ead84737811b6d2dd7b22a4b295b11fe.jpg); */
+  /* background-image: url(https://i.pinimg.com/750x/14/18/22/141822fd9f048c719b237ffbd333d155.jpg); */
+  /* background-image: url(https://i.pinimg.com/564x/70/89/b8/7089b8f5419717b5b83e0f59b44a8102.jpg); */
+  /* background-image: url(https://i.pinimg.com/564x/f9/61/df/f961df9bdbe1bf2ec9f3eb0e268775f4.jpg); */
+  background-image: url(https://i.pinimg.com/564x/1b/c5/eb/1bc5eb3e13458b8433374ec2ae4e6857.jpg);
+  /* background-image: url(https://i.pinimg.com/236x/10/0a/b4/100ab4911d027df27375550826adf26a.jpg); */
+  background-size: contain;
+  /* background: no-repeat; */
+  background-position: center;
+  /* max-width: 1370px;
+  max-height: auto;
+  width: 100%;
+  height: 100%; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 23, 51, 0.5); 
+}
+
+.banner .beee {
+  position: absolute;
+  justify-content: left;
+  text-align: left;
+  left: 10%;
+  top: 10%;
+}
+
+.butterfly {
+  margin-top: 100px;
+}
+
+/* Arrow */
+
+.arrows {
+  position: absolute;
+  justify-content: right;
+  text-align: right;
+  top: 50%;
+  right: 10%; 
+  /* animation: fadeInRight 10s forwards; */
+  transform: rotate(-45deg); 
+}
+
+/* @keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    right: -50px;
+  }
+  100% {
+    opacity: 1;
+    right: 10%;
+  }
+} */
+
+/* Banner Content */
+
+.banner-content {
+  position: relative;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: auto;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.banner-title {
+  font-size: 40px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: twistFlipJump 2s;
+  transition: transform 0.5s;
+}
+
+.banner-title {
+  opacity: 1;
+  animation: fade-in 1s ease-in-out forwards;
+
+}
+
+.banner-title strong {
+  font-family: 'Great Vibes', cursive;
+  font-size: 44px;
+  font-weight: 900;
+  /* font-family: Courgette,cursive; */
+  /* font-family: Segoe Print; */
+  font-size: 50px;
+  text-shadow: 0 0 9px #2d1eb4, 0 0 17px #100347;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* .banner-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: twistFlipJump 2s;
+  transition: transform 0.5s;
+} */
+
+.banner-title {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: bounce 2s;
+  transition: transform 0.3s;
+  text-shadow: 0 0 9px #2d1eb4, 0 0 15px #170275;
+}
+
+.banner-title:hover {
+  transform: scale(1.2);
+}
+
+.cake {
+  margin-bottom: -27px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.banner-message {
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-family:'Segoe UI', cursive;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.countdown-item {
+  margin: 0 10px;
+}
+
+.countdown-value {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 20px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .banner {
+    /* background-image: url(https://i.pinimg.com/236x/93/80/6e/93806eb139e793bc677736323037e9dc.jpg); */
+    /* background-image: url(https://i.pinimg.com/236x/f3/76/3c/f3763cbc0f9ede9a15815d95b2361667.jpg); */
+    /* background-image: url(https://i.pinimg.com/236x/90/22/5d/90225d9a9800befe1f3a418f799c5c73.jpg); */
+    /* background-image: url(https://i.pinimg.com/564x/39/68/bf/3968bf1291ae9a1d112792468901f93b.jpg); */
+    background-image: url(https://i.pinimg.com/236x/70/07/cf/7007cf262c0037abbf128709ac23269c.jpg);
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0  ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 2, 87, 0.9); /* Adjust the color and opacity of the overlay */
+  }
+  
+  .banner-content {
+    max-width: 80%;
+    margin-top: 80px;
+  }
+
+  .banner-title {
+    font-size: 29px;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+
+  .cake {
+    margin-bottom: -20px;
+  }
+  strong {
+    text-shadow: 0 5px 5px #170275, 0 0 20px #2d1eb4;
+    /* text-shadow: 4px 4px 0px #371F76, 
+      -4px 0 0px #795695,
+      7px 4px 0 #643B9F; */
+  }
+
+  .banner-message {
+    font-size: 20px;
+    font-family: 'Gabriela';
+    color: #610C27;
+  }
+
+  .countdown-value {
+    font-size: 22px;
+    color: #610C27;
+  }
+
+  .countdown-label {
+    font-size: 14px;
+    color: #610C27;
+  }
+
+  .countdown {
+    max-width: 370px;
+    left: 50%;
+
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.countdown-item.blink {
+  animation: blink 1s infinite;
+}

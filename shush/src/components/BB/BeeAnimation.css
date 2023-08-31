@@ -1,0 +1,71 @@
+.animation-container {
+  padding: 20px 10px;
+  margin: 30px 20px;
+  /* position: absolute;
+  max-width: 100px;
+  max-height:  300px;
+  overflow: hidden; */
+}
+
+.bee {
+  width: 100px;
+  height: auto;
+}
+
+@keyframes moveX {
+  0%,
+  75% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes moveY {
+  0%,
+  50% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10vh);
+  }
+  75% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes flyAnimation {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(35deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotate(-60deg);
+  }
+}
+
+.bee {
+  animation: moveX 7s ease-in-out infinite, moveY 6s ease-in-out infinite,
+    moveX 9s ease-in-out infinite;
+}
+/* .bee {
+    animation: moveX 8s linear infinite, moveY 12s linear infinite; 
+  } */
+
+.animation-container:hover {
+  animation: flyAnimation 5s linear infinite;
+  cursor: pointer;
+}
