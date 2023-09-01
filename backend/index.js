@@ -11,11 +11,21 @@ const app = express();
 dotenv.config();
 console.log("test");
 
-app.use(bodyParser.json({ limit: '30mb', extended: true }))
-app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
+app.use(bodyParser.json({ limit: '30mb', extended: true }))
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
+
 app.use('/', postRoutes);
+
+app.get("/", (req, res) => {
+  res.json("Success");
+});
+
+app.use(cors({
+  origin: 'https://bzb-busybee.vercel.app', 
+  credentials: true, 
+}));
 
 const PORT = process.env.PORT|| 5000;
 

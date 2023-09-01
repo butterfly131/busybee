@@ -17,28 +17,29 @@ const Display = () => {
 
   return (
     <>
-      <div className={classes.root}>
-        <Container maxWidth="xl">
-          <Typography variant="h4" className={classes.title}>
-            Ciphered Whispers: <br></br> Hacked from the Heart :)   
-          </Typography>
-          <Grid container spacing={2} alignContent="center" >
-            {posts.length ? (
-              posts.map((post) => (
-                <Grid key={post._id} item xs={12} sm={6} md={4} lg={3}>
-                  <Post post={post} />
-                </Grid>
-              ))
-            ) : (
-              <Grid item xs={12} className={classes.container}>
-                <CircularProgress />
-              </Grid>
-            )}
+  <div className={classes.root}>
+    <Container maxWidth="xl">
+      <Typography variant="h4" className={classes.title}>
+        Ciphered Whispers: <br></br> Hacked from the Heart :)
+      </Typography>
+      <Grid container spacing={2} alignContent="center">
+        {posts.length ? (
+          posts.map((post) => (
+            <Grid key={post._id} item xs={12} sm={6} md={4} lg={3}>
+              <Post post={post} />
+            </Grid>
+          ))
+        ) : (
+          <Grid item xs={12} className={classes.container}>
+            <CircularProgress />
           </Grid>
-        </Container>
-      </div>
-      <Footer className={classes.footer}/>
-    </>
+        )}
+      </Grid>
+    </Container>
+  </div>
+  <Footer className={classes.footer} />
+</>
+
   );
 };
 
