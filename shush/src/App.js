@@ -22,8 +22,8 @@ function App() {
         <Route path="/banner" element={<Banner />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/guestbook" element={<Guestbook />} />
-        <Route path="/poem0" element={<Poem0/>} />
-        <Route path="/poem" element={<Poem/>} />
+        // <Route path="/poem0" element={<Poem0/>} />
+        // <Route path="/poem" element={<Poem/>} />
         <Route path="/display" element={<Display/>} />
         <Route path="/footer" element={<Footer/>} />
       </Routes>
