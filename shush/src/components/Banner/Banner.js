@@ -104,7 +104,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="arrows">
-          <Link to="/poem0">
+          <Link to="/gallery">
             <Arrows />
           </Link>
 \          </div>
